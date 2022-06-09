@@ -1,3 +1,7 @@
+#####################################################################################
+########################## Please Subscribe To Our channel ###########################
+#####################################################################################
+
 import pandas as pd
 
 from sklearn.linear_model import LinearRegression
@@ -18,6 +22,6 @@ Y = df[["price"]]
 
 model.fit(X, Y)
 
-res = model.predict(bed_rooms, bath_rooms, feet)
+res = model.predict([[bed_rooms, bath_rooms, feet]])
 
 print(res)
